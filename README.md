@@ -15,8 +15,9 @@ b. Konfigurasi dapat di reload bila terdapat perubahan dari konfigurasi</br>
 ```
 spring.application.name=spring-cloud-client
 spring.cloud.config.uri=http://localhost:9080
+spring.cloud.config.failFast=false	
 ```
-Konfigurasi di atas menjelaskan, bahwa aplikasi ini memiliki nama spring-cloud-client yang akan di mapping dengan konfigurasi file yang akan di ambil oleh Spring Config Server dan ambil konfigurasi tersebut di alamat yang sudah di tentukan
+Konfigurasi di atas menjelaskan, bahwa aplikasi ini memiliki nama spring-cloud-client yang akan di mapping dengan konfigurasi file yang akan di ambil oleh Spring Config Server dan ambil konfigurasi tersebut di alamat yang sudah di tentukan. FailFast menandakan apakah aplikasi tetap berjalan bisa server config down(true:server config wajib hidup, false: tetap jalan meski server config tidak hidup)
 
 4. Untuk memudahkan, kita akan membuat RestController sebagai media testing
 ```

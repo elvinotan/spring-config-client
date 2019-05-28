@@ -23,7 +23,6 @@ Konfigurasi di atas menjelaskan, bahwa aplikasi ini memiliki nama spring-clound-
 @RefreshScope
 @RestController
 @RequestMapping("/api")
-	
 public class ClientRest {
 	
 	@Value("${app.test.message:Default Test Message}")
@@ -35,4 +34,6 @@ public class ClientRest {
 	}
 }
 ```
+```@RefreshScope``` : Setiap ada property yang dapat di reload ulang tambahkan anotation ini
+
   

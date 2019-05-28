@@ -17,7 +17,6 @@ b. Konfigurasi dapat di reload bila terdapat perubahan dari konfigurasi</br>
 @RestController
 @RequestMapping("/api")
 public class ClientRest {
-
 	@Value("${app.test.message:Default Test Message}")
 	private String message;
 	

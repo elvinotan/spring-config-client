@@ -12,7 +12,7 @@ Web
 a. Konfigurasi ke load dari Server Config dan terkirim ke client</br>
 b. Konfigurasi dapat di reload bila terdapat perubahan dari konfigurasi</br>
 3. Untuk memudahkan kita akan membuat RestController sebagai media testing
-<code>
+```
 @RefreshScope
 @RestController
 @RequestMapping("/api")
@@ -27,6 +27,5 @@ public class ClientRest {
 		return "Property app.test.message is "+message;
 	}
 }
-
-</code>
+```
   

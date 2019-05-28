@@ -36,7 +36,7 @@ public class ClientRest {
 ```
 ```@RefreshScope``` : Setiap ada property yang dapat di reload ulang tambahkan anotation ini</br>
 ```@Value("${app.test.message:Default Test Message}")``` : Property yang akan di ambil dari Config Server dan yang akan di reload bila terdapat perubahan</br>
-```POST : http://localhost:9081/actuator/refresh```: Bila konfigurasi berubah, perubahan tersebut tidak otomatis di terima oleh client, kita harus menjalakan rest command agar client meminta kembali konfigurasinya. endpoint /actuator/refresh ini otomatis di sertai pada saat kita include actuator dependencies/br>. Tapi ingat harus ada konfigurasi ```management.endpoints.web.exposure.include: refresh```agar endpoint tersebut dapat di akses
+```POST : http://localhost:9081/actuator/refresh```: Bila konfigurasi berubah, perubahan tersebut tidak otomatis di terima oleh client, kita harus menjalakan rest command agar client meminta kembali konfigurasinya. endpoint /actuator/refresh ini otomatis di sertai pada saat kita include actuator dependencies</br>. Tapi ingat harus ada konfigurasi ```management.endpoints.web.exposure.include: refresh```agar endpoint tersebut dapat di akses
 
 
   

@@ -35,5 +35,6 @@ public class ClientRest {
 }
 ```
 ```@RefreshScope``` : Setiap ada property yang dapat di reload ulang tambahkan anotation ini
+```@Value("${app.test.message:Default Test Message}")``` : Property yang akan di ambil dari Config Server dan yang akan di reload bila terdapat perubahan
 
   

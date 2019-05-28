@@ -38,5 +38,7 @@ public class ClientRest {
 ```@Value("${app.test.message:Default Test Message}")``` : Property yang akan di ambil dari Config Server dan yang akan di reload bila terdapat perubahan</br>
 ```POST : http://localhost:9081/actuator/refresh```: Bila konfigurasi berubah, perubahan tersebut tidak otomatis di terima oleh client, kita harus menjalakan rest command agar client meminta kembali konfigurasinya. endpoint /actuator/refresh ini otomatis di sertai pada saat kita include actuator dependencies</br>. Tapi ingat harus ada konfigurasi ```management.endpoints.web.exposure.include: refresh```agar endpoint tersebut dapat di akses
 
-
+# note
+Bila client tidak menggunakan spring, maka configurasi dapat di akses dengan mengarahkan url ke Spring Cloud Server</br>
+```http://{spring-clound-server}:{port}/{client-app-name}/{profile}```
   

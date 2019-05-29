@@ -42,5 +42,7 @@ public class ClientRest {
 # note
 Bila client tidak menggunakan spring, maka configurasi dapat di akses dengan mengarahkan url ke Spring Cloud Server</br>
 ```http://{spring-clound-server}:{port}/{client-app-name}/{profile}```</br>
-Contoh lain ```https://github.com/kennyk65/Microservices-With-Spring-Student-Files/tree/master/lab-3/client-solution```
+Untuk konfigurasi app ini please refer to https://github.com/elvinotan/config/application.yml lalu cari berdasarkan application name</br>
+Contoh lain ```https://github.com/kennyk65/Microservices-With-Spring-Student-Files/tree/master/lab-3/client-solution```</br>
+
   
